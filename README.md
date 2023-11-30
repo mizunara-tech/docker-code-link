@@ -8,6 +8,40 @@ cli tool for attaching containers directly to vscode
 VS Marketplace link: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
 
 
+## Usage
+
+The basic usage is as follows:
+
+```
+# Display a list of containers
+docker-code-link list
+
+# Attach to a specific container
+docker-code-link attach [container-name]
+```
+
+### Bind Keys
+
+`bash`
+
+```.bashrc
+bind -x '"\C-p":"/path/to/docker-code-link"'
+```
+
+`zsh`
+
+```.zshrc
+bindkey -s "^P" "/path/to/docker-code-link\n"
+```
+
+
+## Features
+
+* Display a list of Docker containers
+
+* Attach to a selected container using VS Code
+
+
 ## Building from Source
 
 This requires go >= 1.20
@@ -38,37 +72,6 @@ Replace GOOS and GOARCH values as per your requirement.
 
 
 
-## Usage
-
-The basic usage is as follows:
-
-```
-# Display a list of containers
-docker-code-link list
-
-# Attach to a specific container
-docker-code-link attach [container-name]
-```
-
-### Bind Keys
-
-`bash`
-
-```.bashrc
-bind -x '"\C-p":"/path/to/docker-code-link"'
-```
-
-`zsh`
-
-```.zshrc
-bindkey -s "^P" "/path/to/docker-code-link\n"
-```
-
-## Features
-
-* Display a list of Docker containers
-
-* Attach to a selected container using VS Code
 
 ## License
 
