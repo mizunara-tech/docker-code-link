@@ -1,12 +1,12 @@
 # docker-code-link
+
 cli tool for attaching containers directly to vscode
 
 ## Dependencies
 
-* Remote Development (VS Code Extension) 
+- Remote Development (VS Code Extension)
 
 VS Marketplace link: https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
-
 
 ## Usage
 
@@ -25,22 +25,20 @@ docker-code-link attach [container-name]
 `bash`
 
 ```.bashrc
-bind -x '"\C-p":"/path/to/docker-code-link"'
+bind -x '"\C-p":"/path/to/docker-code-link list\n"'
 ```
 
 `zsh`
 
 ```.zshrc
-bindkey -s "^P" "/path/to/docker-code-link\n"
+bindkey -s "^P" "/path/to/docker-code-link list\n"
 ```
-
 
 ## Features
 
-* Display a list of Docker containers
+- Display a list of Docker containers
 
-* Attach to a selected container using VS Code
-
+- Attach to a selected container using VS Code
 
 ## Building from Source
 
@@ -54,6 +52,7 @@ If you wish to build docker-code-link from source for your specific platform, fo
 git clone https://github.com/mizunara-tech/docker-code-link.git
 cd docker-code-link
 ```
+
 2. Build the Binary:
 
 For Linux/Mac:
@@ -70,13 +69,9 @@ GOOS=windows GOARCH=amd64 go build -o docker-code-link.exe ./cmd/docker-code-lin
 
 Replace GOOS and GOARCH values as per your requirement.
 
-
-
-
 ## License
 
 This project is provided under the MIT License.
-
 
 ## Contributing
 
